@@ -31,6 +31,7 @@ public class LoginPage {
 	public void login(String userName, String password) {
 		actionDriver.enterText(userNameField, userName);
 		actionDriver.enterText(passwordField, password);
+		actionDriver.waitForElementToBeClickable(loginButton);
 		actionDriver.click(loginButton);
 	}
 	

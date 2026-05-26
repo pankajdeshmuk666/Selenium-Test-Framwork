@@ -43,13 +43,16 @@ public class HomePage {
 	}
 
 	// Method to verify orangeHRM log is visible
-	public boolean verifyOrangeHRMLogo() {
+	public boolean verifyOrangeHRMlogo() {
+		actionDriver.waitForElementToBeVisible(orangeHRMLogo);
 		return actionDriver.isDisplayed(orangeHRMLogo);
 	}
 
 	// Method to perform logout action
 	public void logout() {
+		actionDriver.waitForElementToBeVisible(userIDButton);
 		actionDriver.click(userIDButton);
+		actionDriver.waitForElementToBeVisible(logoutButton);
 		actionDriver.click(logoutButton);
 	}
 }

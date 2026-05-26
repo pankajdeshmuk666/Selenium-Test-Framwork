@@ -154,7 +154,7 @@ public class ActionDriver {
 	}
 
 	// Wait for Element to be clickable
-	private void waitForElementToBeClickable(By by) {
+	public void waitForElementToBeClickable(By by) {
 		try {
 			wait.until(ExpectedConditions.elementToBeClickable(by));
 		} catch (Exception e) {
@@ -163,7 +163,7 @@ public class ActionDriver {
 	}
 
 	// Wait for Element to be Visible
-	private void waitForElementToBeVisible(By by) {
+	public void waitForElementToBeVisible(By by) {
 		try {
 			wait.until(ExpectedConditions.visibilityOfElementLocated(by));
 		} catch (Exception e) {

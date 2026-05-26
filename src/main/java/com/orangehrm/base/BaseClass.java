@@ -47,7 +47,7 @@ public class BaseClass {
 		System.out.println("Setting up WebDriver for:" + this.getClass().getSimpleName());
 		launchBrowser();
 		cofigureBrowser();
-		staticWait(2);
+		staticWait(5);
 
 		logger.info("WebDriver initialized and browser maximized");
 		logger.trace("This is a trace message");
